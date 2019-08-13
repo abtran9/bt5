@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hãy thử đoán xem!</title>
+    <link rel="stylesheet" href="d.css">
+</head>
+<body>
+    <div class="button"><input type="button" onclick="play()" value="PLAY"></div>
+    <script>
+        function play() { 
+           
+            // let a = parseInt(prompt("Đoán số từ 1 đến 4 nhé!"));
+            for (let a =1; a<=10, a>=1;) {
+                let a = parseInt(prompt("mời nhập số từ 1 đến 10 "));
+                if (a<=3) {
+                    alert("Số của bạn hơi bé, thử lại nào!");
+                } else if (a>=5) {
+                    alert("Số của bạn hơi lớn, thử lại nào!");
+                } else {
+                    alert("Chính xác!");
+                    break;
+                }
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
